@@ -1,0 +1,20 @@
+{
+  "name": "esbuild-plugin-conditional-build",
+  "version": "1.0.0",
+  "description": "A plugin for esbuild that allows for conditional inclusion of javascript based on build time constants.",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewPerson/Conditional-Build.git"
+  },
+  "author": "AndrewPerson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AndrewPerson/Conditional-Build/issues"
+  },
+  "homepage": "https://github.com/AndrewPerson/Conditional-Build"
+}
