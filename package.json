@@ -1,6 +1,6 @@
 {
   "name": "esbuild-plugin-conditional-build",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A plugin for esbuild that allows for conditional inclusion of javascript based on build time constants.",
   "type": "module",
   "main": "index.mjs",
