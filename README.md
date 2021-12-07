@@ -47,6 +47,7 @@ build({
 
 ```js
 //src/foo.js
+//#conditional
 
 //#if DEVELOPMENT
 console.log("Development!");
@@ -54,6 +55,8 @@ console.log("Development!");
 console.log("Production.");
 //#endif
 ```
+
+**Note that you must have `//#conditional` at the very start of your file.**
 
 After running `node build.js` `dist/foo.js` will look like this:
 ```js
