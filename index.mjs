@@ -6,6 +6,9 @@ export default (conditions = []) => {
         setup(build) {
             build.onLoad({ filter: /\.[tj]sx?$/g, namespace: "file" }, async args => {
                 var file = await readFile(args.path, "utf8");
+
+                if (!file.startsWith("//#conditional")) return;
+
                 var lines = file.split("\n");
 
                 var statements = [];
