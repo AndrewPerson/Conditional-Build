@@ -11,18 +11,7 @@ To install through NPM run this command:
 npm i esbuild-plugin-conditional-build
 ```
 
-You will need to set the `type` of your package to `"module"` in `package.json`.
-Any files you use this plugin in will also need to have the extension `.mjs` instead of `.js`.
-
-```json
-{
-    "name": "...",
-    "version": "1.0.0",
-    "description": "...",
-    "type": "module",
-    "main": "index.mjs",
-}
-```
+Any files you use this plugin in will need to have the extension `.mjs` instead of `.js`.
 
 ## Usage
 
