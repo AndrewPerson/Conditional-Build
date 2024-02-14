@@ -13,7 +13,7 @@ export default (conditions = []) => {
 
                 var statements = [];
                 for (var i = 0; i < lines.length; i++) {
-                    var line = lines[i];
+                    var line = lines[i].trim();
 
                     if (line.startsWith("//#if")) {
                         var condition = line.substring(5).trim();
@@ -27,7 +27,7 @@ export default (conditions = []) => {
                         statements.push({
                             condition: condition,
                             invert: invert,
-                            start: lines.indexOf(line),
+                            start: i,
                             else: false,
                             elsePos: -1
                         });
